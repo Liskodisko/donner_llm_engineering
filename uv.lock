@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.11"
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'linux'",
@@ -2051,6 +2051,15 @@ wheels = [
 ]
 
 [[package]]
+name = "jsonpath-python"
+version = "1.1.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/98/18/4ca8742534a5993ff383f7602e325ce2d5d7cc93d72ac5e1cdedbea8a458/jsonpath_python-1.1.6.tar.gz", hash = "sha256:dded9932b4ec41fb8726e09c83afa4e6be618f938c2db287cc2a81723c639671", size = 88178, upload-time = "2026-05-07T01:26:34.482Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/55/8a/1270a6803bd821cbfcdda387eaa13cb41a7b1f7b9bd145979b3bfb9d6cb7/jsonpath_python-1.1.6-py3-none-any.whl", hash = "sha256:a1c50afd8d3fbbaf47a4873bc890dcb3c15da96f5c020327977d844d8731a2d4", size = 14453, upload-time = "2026-05-07T01:26:33.306Z" },
+]
+
+[[package]]
 name = "jsonpointer"
 version = "3.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2551,6 +2560,7 @@ dependencies = [
     { name = "numpy" },
     { name = "ollama" },
     { name = "openai" },
+    { name = "openrouter" },
     { name = "pandas" },
     { name = "plotly" },
     { name = "protobuf" },
@@ -2602,6 +2612,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.3.3" },
     { name = "ollama", specifier = ">=0.6.0" },
     { name = "openai", specifier = ">=1.109.1" },
+    { name = "openrouter", specifier = ">=1.3.66" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "plotly", specifier = ">=6.3.0" },
     { name = "protobuf", specifier = "==3.20.2" },
@@ -3406,6 +3417,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/51/a2/f4023c1e0c868a6a5854955b3374f17153388aed95e835af114a17eac95b/openai-2.7.1.tar.gz", hash = "sha256:df4d4a3622b2df3475ead8eb0fbb3c27fd1c070fa2e55d778ca4f40e0186c726", size = 595933, upload-time = "2025-11-04T06:07:23.069Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/8c/74/6bfc3adc81f6c2cea4439f2a734c40e3a420703bbcdc539890096a732bbd/openai-2.7.1-py3-none-any.whl", hash = "sha256:2f2530354d94c59c614645a4662b9dab0a5b881c5cd767a8587398feac0c9021", size = 1008780, upload-time = "2025-11-04T06:07:20.818Z" },
+]
+
+[[package]]
+name = "openrouter"
+version = "1.3.66"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpcore" },
+    { name = "httpx" },
+    { name = "jsonpath-python" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/58/d9/d1d935952dcaac2b6fc393b985378e616a27adcdd66609614367cbf1d503/openrouter-1.3.66.tar.gz", hash = "sha256:40f04bd882f9e511d2062ef428c86b90105bff420eec297ad4d7b75b55e9c119", size = 609386, upload-time = "2026-10-18T21:57:51.977Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1b/21/6fb23838c397e822f1ea7ab34c8ebe4fbd14427778f546376375382c20d2/openrouter-1.3.66-py3-none-any.whl", hash = "sha256:a199a0c85bbab1af1eadc82a9457bba28041e4e4958d6a5d012f128953974c13", size = 1322329, upload-time = "2026-10-18T21:57:50.087Z" },
 ]
 
 [[package]]
